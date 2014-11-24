@@ -1,0 +1,8 @@
+<div ng-controller="NameController">
+    Name: <input type="text" ng-model="myName" ng-pattern="/^([^0-9]*)$/" />
+    <span class="errorMessage" ng-hide="myName"> Cijfers zijn niet toegelaten in een naam</span><br />
+    <br />
+    Your name is: {{myName | uppercase}}<br />
+    <br />
+    <input type="button" ng-click="changeName()" value="Change myName" />
+</div>

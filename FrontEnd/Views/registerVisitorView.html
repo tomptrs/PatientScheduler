@@ -1,0 +1,24 @@
+
+<div ng-app="SampleApp" ng-controller="registerVisitorController"> 
+	
+<form role="form" ng-submit="submit()" method="post" action="" >
+  <div class="form-group">
+    <label for="exampleInputEmail1">Username</label>
+    <input type="text"  class="form-control" id="exampleInputEmail1" ng-model="username" name="username" placeholder="Enter username">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" ng-model="password" name="password" placeholder="Password">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputPassword1">Repeat Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" ng-model="password2" name="password" placeholder="Password">
+  </div>
+  
+ <button data-ng-click="submit_visitor()" class="btn btn-default" name="add">Add Patient</button>
+<!--  <button type="submit" class="btn btn-default">Submit</button>-->
+  
+
+</form>
+
+</div>

@@ -1,0 +1,28 @@
+<div ng-controller="searchController">
+	<form class="well form-search">
+		<label>Search:</label>
+		<input type="text" ng-model="username" class="input-medium search-query" placeholder="Username...">
+		<button type="submit" class="btn" ng-click="search()">
+			Search
+		</button>
+
+	</form>
+	<pre ng-model="result">
+{{result}}
+</pre>	
+
+
+	
+
+		<table class="table table-striped">
+
+			<tr ng-repeat='x in result'>
+				<td>{{x.Username}}</td><td>{{x.Code}}</td><td>		
+
+			</tr>
+
+		</table>
+
+	
+
+</div>
